@@ -1,3 +1,9 @@
+/* Textbook.js
+Written by: athini Mbiko
+Date: 27August 2020
+Description: This is the Textbook model. It contains the code for the Payment class.
+*/
+
 const { createConnection } = require('../config/dbUtils'); // Relative path to the dbUtils.js file
 
 async function createTable() {
@@ -97,7 +103,7 @@ async function readCategory(catergory) {
     }
 }
 
-async function updatePayment(catergory) {
+async function updateCatergory(catergory) {
     try {
         const connection = await createConnection();
         console.log('Connected to MySQL database');
